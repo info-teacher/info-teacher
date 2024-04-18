@@ -6,17 +6,26 @@
 
 .header {
     display: flex;
-    justify-content: center;
-    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 10vw;
     margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
+.header-menu {
+    display: flex;
+    gap: 15px;
 }
 
 .header-item {
     text-decoration: none;
     font-family: Calibri, sans-serif;
-    padding: 10px;
     color: darkgray;
+    font-size: 18px;
 }
 
 .header-item:hover {
@@ -30,6 +39,7 @@
 
 .main {
     padding: 10px 10vw;
+    margin-top: 98px;
 }
 
 .main-content {
@@ -59,16 +69,49 @@
     border-radius: 8px;
 }
 
-@media screen and (max-width: 900px) {
+.burger-button {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu-active {
+    left: 0;
+    top: 90px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
     .header {
-        padding: 10px 5px;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px 0;
+        padding: 15px;
     }
 
-    .header-item {
-        padding: 0;
+    .header-menu {
+        display: none;
+    }
+
+    .burger-button {
+        background-color: white;
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 55px;
+    }
+
+    .burger-button:hover {
+        background-color: #d3d3d3;
+        cursor: pointer;
     }
 
     .main-content {
