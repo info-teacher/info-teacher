@@ -128,4 +128,9 @@
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+    }
 }
