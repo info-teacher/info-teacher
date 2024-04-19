@@ -69,6 +69,10 @@
     border-radius: 8px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .burger-button {
     display: none;
 }
@@ -87,6 +91,12 @@
     background-color: white;
     width: 100%;
     gap: 10px;
+}
+
+.hr-line {
+    border: 3px solid #d7d7d7;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 1000px) {
